@@ -1,17 +1,7 @@
-for (i=0; i<10; i++){
+var links = document.getElementsByTagName("a");
 
-    if (i === 5 || i === 3){
+for (i = 0; i < links.length; i++){
 
-        continue;
-    }
-   
-    console.log(i);
-
-    if (i===7){
-        console.log("Help me!")
-        break;
-    }
+    links[i].className = "link-" + i;
 
 }
-
-console.log("I have broken out of the loop!");
