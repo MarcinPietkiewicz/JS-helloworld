@@ -1,4 +1,4 @@
-# The Net Ninja
+## The Net Ninja
 
 ## Javascript tutorial files
 
