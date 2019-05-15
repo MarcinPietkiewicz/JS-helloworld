@@ -1,9 +1,10 @@
-var a = "5";
-var b = 5;
+var myString = '1SErt oijssR String ninja tszgZJ';
 
-console.log(a + b);
 
-console.log(Math.round(7.4));
-console.log(Math.floor(7.4));
-console.log(Math.ceil(7.4));
-console.log(Math.round(Math.PI));
+if (myString.indexOf("ninja") === -1){
+
+        console.log("the word ninja is not in the string");
+
+} else {
+    console.log("the word ninja starts at position "+myString.indexOf("ninja"));
+}
