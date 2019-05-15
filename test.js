@@ -1,7 +1,9 @@
-var links = document.getElementsByTagName("a");
+var a = "5";
+var b = 5;
 
-for (i = 0; i < links.length; i++){
+console.log(a + b);
 
-    links[i].className = "link-" + i;
-
-}
+console.log(Math.round(7.4));
+console.log(Math.floor(7.4));
+console.log(Math.ceil(7.4));
+console.log(Math.round(Math.PI));
