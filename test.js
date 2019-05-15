@@ -1,29 +1,22 @@
-var myArray = new Array();
-myArray[0] = 8;
-myArray[1] = "hello";
 
-var myCar = new Object();
-myCar.maxSpeed = 50;
-myCar.driver = "Martin";
+// constructor function
+var Car = function(maxSpeed, driver){
 
-myCar.drive = function(){console.log("now driving");};
-
-myCar.drive();
-
-
-var myCar2 = {
-    maxSpeed:90, 
-    driver: "Net Ninjas", 
-    drive: function(speed,time){
+    this.maxspeed = maxSpeed;
+    this.driver = driver;
+    this.drive = function(speed,time){
         console.log(speed * time);
-    },
-    logDriver: function(){
-       console.log("driver name is " + this.driver) 
-    }
-     
-};
+    };
+    this.logDriver = function(){
+        console.log("driver name is "+this.driver);
+    };
 
+}
+// new objects
+var myCar = new Car(70,"Ninja Man");
+var myCar2 = new Car(60,"Martin");
+var myCar3 = new Car(50,"Hilda");
+var myCar4 = new Car(40,"Albert");
+
+myCar.drive(30,5);
 myCar2.logDriver();
-console.log(myCar2.maxSpeed);
-myCar2.drive(50, 3);
-
