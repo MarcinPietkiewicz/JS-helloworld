@@ -1,22 +1,27 @@
+var birthday = new Date(1985, 0, 15, 11, 15, 25);
+var birthday2 = new Date(1985, 0, 15, 11, 15, 25);
 
-// constructor function
-var Car = function(maxSpeed, driver){
+//get the month of the date (0-11)
+console.log(birthday.getMonth());
 
-    this.maxspeed = maxSpeed;
-    this.driver = driver;
-    this.drive = function(speed,time){
-        console.log(speed * time);
-    };
-    this.logDriver = function(){
-        console.log("driver name is "+this.driver);
-    };
+//get the ful year (YYYY)
+console.log(birthday.getFullYear());
 
+//get the date of the month (1-31)
+console.log(birthday.getDate());
+
+//get the day of the week (0-6)
+console.log(birthday.getDay());
+
+//get the hour of the date (0 - 23)
+console.log(birthday.getHours());
+
+//get the number of miliseconds since 1st Jan 1970
+console.log(birthday.getTime());
+console.log(birthday2.getTime());
+
+if(birthday.getTime() == birthday2.getTime()){
+    console.log("birthdays are equal");
+}else{
+    console.log("birthdays are not equal");
 }
-// new objects
-var myCar = new Car(70,"Ninja Man");
-var myCar2 = new Car(60,"Martin");
-var myCar3 = new Car(50,"Hilda");
-var myCar4 = new Car(40,"Albert");
-
-myCar.drive(30,5);
-myCar2.logDriver();
