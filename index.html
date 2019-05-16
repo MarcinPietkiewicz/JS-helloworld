@@ -1,19 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-<meta charset="utf-8" />
-<title>Javascript for beginners</title>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Javascript for beginners</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+
+    <form id="my-form" name="myForm" action="a">
+        <label for="name">Name:</label>
+        <input type="text" name="name"><br>
+        <label>Hobbies</label><br>
+        <input type="checkbox" name="biking" value="biking">Biking<br>
+        <input type="checkbox" name="biking" value="skiing">Skiing<br>
+        <input type="checkbox" name="biking" value="driving">Driving<br>
+        <label for="color">Fav color:</label>
+        <select name="color">
+            <option>Red</option>
+            <option>Blue</option>
+            <option>Green</option>
+        </select>
+        <input type="submit" name="submit" value="Submit">
+    </form>
+
+    <script src="test.js"></script>
 
 
-    </head>
-    <body>
-
-<div id="color-changer"></div>
-
-            <script src="test.js"></script>
-
-
-
-            <link href="style.css" type="text/css" rel="stylesheet">
-    </body>
+</body>
 </html>
