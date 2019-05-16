@@ -1,14 +1,3 @@
-var myForm = document.forms.myForm;
-var message = document.getElementById("message");
+var maPara = document.getElementById("content").getElementsByTagName("p")[5];
+var myPara2 = $("#content p:last-child");
 
-myForm.onsubmit = function () {
-
-    if (myForm.name.value == "") {
-        message.innerHTML = "please enter a name";
-        return false;
-        alert("no");
-    } else {
-        message.innerHTML = "yes!";
-        return true;
-    }
-};
